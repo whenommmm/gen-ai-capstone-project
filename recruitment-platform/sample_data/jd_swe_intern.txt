@@ -1,0 +1,36 @@
+Software Engineer Intern
+
+About us:
+We're a fast-growing product company building web applications used by thousands of
+people daily. Engineering is organized into small, autonomous teams that own their
+features end to end. Interns are treated like engineers: you'll commit code to
+production, join code reviews, and ship features real users depend on.
+
+About the role:
+You'll work across the stack on a product team — building APIs, wiring up frontend
+features, writing tests, and fixing bugs. You'll pair with a mentor, take a feature
+from a rough ticket to a shipped, reviewed pull request, and learn how software is
+built and operated at scale.
+
+Must have:
+- Solid programming fundamentals in at least one language (Python, JavaScript/TypeScript, Java, Go, or C++)
+- Understanding of data structures, algorithms, and time/space complexity
+- Experience building something end to end: a personal project, coursework, hackathon, or open-source contribution we can look at
+- Comfort with Git and collaborative version control
+- Currently pursuing a degree in computer science or a related field, or equivalent self-taught experience
+
+Nice to have:
+- Familiarity with a web framework (React, Next.js, Django, FastAPI, Spring, etc.)
+- Exposure to databases (SQL or NoSQL) and writing queries
+- Basic understanding of REST APIs and HTTP
+- Experience with testing (unit/integration) or CI/CD
+- Cloud familiarity (AWS, GCP, or Azure) or Docker
+- Open-source contributions or a public GitHub portfolio
+
+Soft skills:
+- Communicates clearly in writing — issues, PR descriptions, and questions
+- Takes feedback well in code review and iterates quickly
+- Curious and self-directed; unblocks themselves before asking, but asks when stuck
+- Collaborates well with teammates, designers, and product
+
+Domain: Software engineering (full-stack web product development).
