@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Self-hosted deploy (outside Lovable): force Nitro on with the Vercel preset so the
+  // build emits Vercel's Build Output API format. Without this, a clone produces a plain
+  // Vite SSR build (dist/server + dist/client) that Vercel can't serve -> 404 on every route.
+  nitro: { preset: "vercel" },
 });
