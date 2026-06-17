@@ -1,0 +1,11 @@
+Oliver Schmidt
+==============
+Experience: 8 years
+Education: M.S. Computer Science, Princeton University
+Companies: Google, Cohere
+
+Summary:
+  - Senior engineer at Cohere on retrieval-augmented generation.
+  - Owned embeddings + vector DB infra (Pinecone, FAISS).
+  - Skills: Python, PyTorch, TensorFlow, GCP, MLflow, RAG.
+  - Led cross-team model launches.

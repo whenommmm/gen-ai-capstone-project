@@ -1,0 +1,11 @@
+Grace Liu
+=========
+Experience: 8 years
+Education: Ph.D. NLP, University of Washington
+Companies: Allen AI, Google
+
+Summary:
+  - Research engineer at Allen AI on NLP and transformers.
+  - Productionized QA models; strong eval methodology.
+  - Skills: Python, PyTorch, TensorFlow, AWS, embeddings, MLflow.
+  - Mentor and frequent conference speaker.

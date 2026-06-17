@@ -1,0 +1,11 @@
+Aarav Mehta
+===========
+Experience: 7 years
+Education: M.S. Computer Science, Stanford University
+Companies: Google, OpenAI
+
+Summary:
+  - Senior ML Engineer at OpenAI working on LLM fine-tuning and RLHF pipelines.
+  - Built distributed training infra on GCP for 70B-param models.
+  - Skills: Python, PyTorch, transformers, RAG, vLLM, Kubernetes, GCP.
+  - Mentored 5 junior engineers; led model-eval working group.

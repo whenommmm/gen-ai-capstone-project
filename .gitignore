@@ -1,0 +1,25 @@
+# Python
+**/.venv/
+**/__pycache__/
+**/*.pyc
+
+# Secrets — never commit the real key
+**/.env
+**/.streamlit/secrets.toml
+
+# Node / frontend build
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/.output/
+**/.nitro/
+**/.vinxi/
+
+# OS / editor / tooling
+.DS_Store
+**/.DS_Store
+.claude/
+**/.claude/
+
+# Internal design skill reference (not part of the project)
+frontend-skill.md

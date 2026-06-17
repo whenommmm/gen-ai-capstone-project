@@ -1,0 +1,12 @@
+Wei Chen
+========
+Experience: 5 years
+Education: Career switcher (former mechanical engineer); self-taught
+Companies: Tesla, AI startup
+
+Summary:
+  - Switched from mechanical engineering into ML 5 years ago.
+  - Built computer-vision and NLP models in production at Tesla and a startup.
+  - Distributed training on GPUs; latency optimization for serving.
+  - Skills: Python, PyTorch, transformers, GCP, RAG, embeddings.
+  - Translates between ML and hardware teams well.

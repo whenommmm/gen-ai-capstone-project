@@ -1,0 +1,25 @@
+Senior Machine Learning Engineer
+
+About the role:
+We are building production LLM-powered products and need a Senior ML Engineer to
+own model training, evaluation, and deployment. You will work across the stack:
+data pipelines, model fine-tuning, and serving infrastructure at scale.
+
+Must have:
+- 5+ years of software engineering, with 3+ years focused on machine learning
+- Strong Python; deep experience with PyTorch or TensorFlow
+- Experience taking ML models to production (serving, monitoring, latency)
+- Solid grasp of NLP / transformers and modern LLM techniques (RAG, fine-tuning)
+- Comfort with cloud infrastructure (AWS, GCP, or Azure)
+
+Nice to have:
+- Experience with distributed training and GPU optimization
+- Contributions to open-source ML projects
+- Experience with vector databases and embeddings
+- MLOps tooling (MLflow, Kubeflow, Weights & Biases)
+
+Soft skills:
+- Clear written communication; able to explain tradeoffs to non-ML stakeholders
+- Mentorship and collaboration in a fast-moving team
+
+Domain: AI / LLM products.

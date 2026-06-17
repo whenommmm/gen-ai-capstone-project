@@ -1,0 +1,35 @@
+Gameplay Programming Intern
+
+About us:
+We're a small, hand-crafted indie studio (think the spirit of Team Cherry or
+Supergiant) building a 2D action-adventure with tight, responsive combat and a
+dense interconnected world. The team is ~12 people who care obsessively about
+game feel. As an intern you'll sit with the gameplay team and ship real features
+that players will actually touch.
+
+About the role:
+You'll work on moment-to-moment gameplay: player movement, combat mechanics,
+enemy behaviour, and the little details that make controls feel good. You will
+prototype quickly, playtest constantly, and iterate with designers and artists.
+
+Must have:
+- Solid programming fundamentals in C# (our engine is Unity)
+- A portfolio: personal projects, game jam entries, mods, or prototypes we can play
+- Genuine understanding of game feel: input handling, hitboxes, timing, juice
+- Ability to take a rough design idea and build a playable prototype
+- Currently studying computer science, game development, or equivalent self-taught experience
+
+Nice to have:
+- Experience with 2D physics, animation systems, or state machines
+- Shader work (HLSL / Shader Graph) or VFX
+- Familiarity with Godot, Unreal, or a custom engine
+- Participation in game jams (Ludum Dare, GMTK, etc.)
+- Basic version control with Git
+- A love of the genre: 2D action, metroidvania, soulslike, or platformers
+
+Soft skills:
+- Thrives in a small, collaborative team where everyone wears many hats
+- Takes feedback well and iterates fast without ego
+- Communicates clearly with non-programmers (designers, artists)
+
+Domain: Indie game development (2D action-adventure).

@@ -1,0 +1,11 @@
+Chloe Bennett
+=============
+Experience: 5 years
+Education: B.A. Marketing
+Companies: Marketing agency, e-commerce
+
+Summary:
+  - Marketing analyst who uses dashboards and basic SQL.
+  - Some experience with spreadsheet models; no programming depth.
+  - Skills: SQL, Excel, Tableau, light Python.
+  - Strong communicator.

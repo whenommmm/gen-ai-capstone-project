@@ -1,0 +1,11 @@
+Sofia Rossi
+===========
+Experience: 6 years
+Education: M.S. Computer Science, UC Berkeley
+Companies: Google, Databricks
+
+Summary:
+  - ML engineer at Databricks on MLOps tooling (MLflow core team).
+  - Productionized fine-tuned LLMs with monitoring and latency SLAs.
+  - Skills: Python, PyTorch, MLflow, Kubeflow, AWS, Weights & Biases.
+  - Clear communicator; ran internal ML onboarding.

@@ -1,0 +1,12 @@
+Ethan Brooks
+============
+Experience: 7 years
+Education: M.S. Computer Science, University of Michigan
+Companies: Uber, Pinterest
+
+Summary:
+  - Senior ML engineer at Pinterest on large-scale recommendation models.
+  - Owned distributed training (FSDP) and GPU optimization on A100s.
+  - Productionized LLM features with RAG and embeddings; latency monitoring.
+  - Skills: Python, PyTorch, TensorFlow, GCP, MLflow, RAG, vLLM.
+  - Mentors engineers; strong written and verbal communication.

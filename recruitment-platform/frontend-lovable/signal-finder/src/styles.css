@@ -1,0 +1,146 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Signal / Noise tokens */
+  --color-void: var(--void);
+  --color-slate: var(--slate);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--line);
+  --color-mist: var(--mist);
+  --color-text: var(--text);
+  --color-signal: var(--signal);
+  --color-good: var(--good);
+  --color-warn: var(--warn);
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  --void: #0B0E13;
+  --slate: #0E1116;
+  --panel: #161B23;
+  --panel-2: #1D2530;
+  --line: #2A323F;
+  --mist: #9AA4B2;
+  --text: #E8ECF2;
+  --signal: #F2A93B;
+  --good: #6BBF8A;
+  --warn: #E0654E;
+
+  --background: var(--slate);
+  --foreground: var(--text);
+  --card: var(--panel);
+  --card-foreground: var(--text);
+  --popover: var(--panel);
+  --popover-foreground: var(--text);
+  --primary: var(--signal);
+  --primary-foreground: #1a1206;
+  --secondary: var(--panel-2);
+  --secondary-foreground: var(--text);
+  --muted: var(--panel-2);
+  --muted-foreground: var(--mist);
+  --accent: var(--panel-2);
+  --accent-foreground: var(--text);
+  --destructive: var(--warn);
+  --destructive-foreground: var(--text);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--signal);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body {
+    background-color: var(--slate);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-image: radial-gradient(1200px 600px at 80% -10%, #11161f 0%, #0E1116 55%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  :focus-visible {
+    outline: 2px solid var(--signal);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@utility font-mono-eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 11px;
+}
+
+@utility scanlines {
+  position: relative;
+}
+@utility scanlines-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(242, 169, 59, 0.04) 0px,
+    rgba(242, 169, 59, 0.04) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+}
+
+@keyframes meter-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes signal-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.meter-fill {
+  transform-origin: left center;
+  animation: meter-fill 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.signal-pulse {
+  animation: signal-pulse 2.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .meter-fill, .signal-pulse { animation: none !important; }
+}
