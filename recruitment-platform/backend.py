@@ -77,7 +77,9 @@ def _load_sample_candidates():
 # ----------------------------------------------------------------- endpoints
 @app.get("/api/health")
 def health():
-    return {"ok": True, "model": MODEL}
+    # key_set lets us verify the GEMINI_API_KEY env var actually reached this process
+    # (without ever exposing the key itself).
+    return {"ok": True, "model": MODEL, "key_set": bool(os.getenv("GEMINI_API_KEY"))}
 
 
 @app.get("/api/sample-briefs")
