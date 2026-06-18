@@ -168,7 +168,7 @@ streamlit run app.py
 | _Vansh Srivastava_ | Backend pipeline & AI prompting |
 | _Ayush Kumar_ | Frontend (React / TanStack) |
 | _Nirbhay_ | Project report & documentation |
-| _Shreyas_ | Testing & evaluation |
-| _Ojas_ | Sample data, bias demo & deployment |
+| _Shreyas Reddy_ | Testing & evaluation |
+| _Ojas Kotiyal_ | Sample data, bias demo & deployment |
 
 _(Fill in names before submission.)_
