@@ -1,5 +1,15 @@
+// Resolve the backend URL:
+//  1. VITE_API_BASE_URL (build-time env) always wins if set.
+//  2. Otherwise, on a deployed host fall back to the live Render backend;
+//     on localhost fall back to the local dev backend. This keeps the deployed
+//     site working even if the Vercel env var isn't configured.
+const FALLBACK_API_BASE_URL =
+  typeof window !== "undefined" && window.location.hostname !== "localhost"
+    ? "https://gen-ai-capstone-project.onrender.com"
+    : "http://localhost:8000";
+
 export const API_BASE_URL =
-  (import.meta.env.VITE_API_BASE_URL as string | undefined) ?? "http://localhost:8000";
+  (import.meta.env.VITE_API_BASE_URL as string | undefined) ?? FALLBACK_API_BASE_URL;
 
 export interface JD {
   title: string;
