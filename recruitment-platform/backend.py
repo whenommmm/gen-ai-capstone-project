@@ -46,7 +46,7 @@ class ParseJDRequest(BaseModel):
 
 class BiasRequest(BaseModel):
     results: list[dict]
-    shortlist_size: int = 10
+    shortlist_size: int = 8
 
 
 class RegenRequest(BaseModel):
@@ -131,7 +131,7 @@ async def extract_text(file: UploadFile = File(...)):
 @app.post("/api/rank")
 async def rank(
     jd: str = Form(...),
-    shortlist_size: int = Form(10),
+    shortlist_size: int = Form(8),
     use_samples: str = Form("false"),
     files: list[UploadFile] = File(default=[]),
 ):

@@ -58,7 +58,7 @@ with st.sidebar:
         st.caption("🟡 API key loaded")
     else:
         st.error("No GEMINI_API_KEY in .env")
-    shortlist_size = st.slider("Shortlist size — the signal cut", 3, 15, 10)
+    shortlist_size = st.slider("Shortlist size — the signal cut", 3, 15, 8)
     st.caption("Everyone below the cut drops to the noise floor.")
 
 # ----------------------------------------------------------------- hero

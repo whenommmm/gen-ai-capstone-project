@@ -29,8 +29,8 @@ print("\nTop 8:")
 for i, r in enumerate(results[:8]):
     print(f"  {i+1:>2}. {r['name']:<20} {r['overall_score']:>3}  [{r['profile'].get('background_type','')}]")
 
-print("\nBias audit on top-10 shortlist…")
-bz = bias_mod.flag_bias(results, 10)
+print("\nBias audit on top-8 shortlist…")
+bz = bias_mod.flag_bias(results, 8)
 print("  homogeneous:", bz.get("is_homogeneous"), "| score:", bz.get("homogeneity_score"))
 for o in bz.get("overlooked_candidates", []):
     print("  overlooked:", o.get("name"))
