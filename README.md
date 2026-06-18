@@ -2,6 +2,10 @@
 
 > Screen many CVs. Surface the ones who matter. Explain why.
 
+**🔗 Live demo:** https://gen-ai-capstone-project-git-main-vansh-s-workspace.vercel.app/
+
+*(First action may take ~50s while the free-tier backend wakes from sleep.)*
+
 A recruitment-augmentation platform built for the Generative AI capstone. It goes
 beyond brittle ATS keyword matching to **semantic understanding of fit**, and it
 **explains every ranking decision transparently** — then flags bias and drafts
