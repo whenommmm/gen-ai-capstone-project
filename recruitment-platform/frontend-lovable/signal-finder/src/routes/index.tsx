@@ -328,7 +328,7 @@ function SignalPage() {
   // Sidebar / control
   const [health, setHealth] = useState<{ ok: boolean; model: string } | null>(null);
   const [healthErr, setHealthErr] = useState(false);
-  const [shortlistSize, setShortlistSize] = useState(10);
+  const [shortlistSize, setShortlistSize] = useState(8);
 
   // Stage 01
   const [briefs, setBriefs] = useState<SampleBrief[]>([]);
@@ -531,7 +531,7 @@ function SignalPage() {
                   min={1}
                   max={20}
                   step={1}
-                  onValueChange={(v) => setShortlistSize(v[0] ?? 10)}
+                  onValueChange={(v) => setShortlistSize(v[0] ?? 8)}
                   className="flex-1"
                 />
                 <span className="font-mono text-signal text-[14px] w-6 text-right">
