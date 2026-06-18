@@ -14,11 +14,12 @@ treatment inside the prompt.
 """
 
 import json
+import os
 import asyncio
 
 from llm import generate_json_async
 
-BATCH_SIZE = 5  # candidates evaluated per API call (tuned for the 10 req/min free tier)
+BATCH_SIZE = int(os.getenv("SCORER_BATCH_SIZE", "5"))  # candidates per API call; override via env
 
 _SYSTEM = (
     "You are an expert technical recruiter who evaluates candidates on SEMANTIC fit, "
