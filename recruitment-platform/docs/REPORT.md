@@ -165,10 +165,10 @@ streamlit run app.py
 
 | Member | Area |
 |---|---|
-| _name_ | Backend pipeline & AI prompting |
-| _name_ | Frontend (React / TanStack) |
-| _name_ | Project report & documentation |
-| _name_ | Testing & evaluation |
-| _name_ | Sample data, bias demo & deployment |
+| _Vansh Srivastava_ | Backend pipeline & AI prompting |
+| _Ayush Kumar_ | Frontend (React / TanStack) |
+| _Nirbhay_ | Project report & documentation |
+| _Shreyas_ | Testing & evaluation |
+| _Ojas_ | Sample data, bias demo & deployment |
 
 _(Fill in names before submission.)_
