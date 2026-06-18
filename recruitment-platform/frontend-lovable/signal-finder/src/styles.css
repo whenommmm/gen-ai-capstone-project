@@ -54,12 +54,12 @@
   --slate: #0E1116;
   --panel: #161B23;
   --panel-2: #1D2530;
-  --line: #2A323F;
-  --mist: #9AA4B2;
-  --text: #E8ECF2;
-  --signal: #F2A93B;
-  --good: #6BBF8A;
-  --warn: #E0654E;
+  --line: #33404F;
+  --mist: #A8B2C0;
+  --text: #F2F5F9;
+  --signal: #FFB84D;
+  --good: #72D19B;
+  --warn: #F07A63;
 
   --background: var(--slate);
   --foreground: var(--text);
@@ -68,7 +68,7 @@
   --popover: var(--panel);
   --popover-foreground: var(--text);
   --primary: var(--signal);
-  --primary-foreground: #1a1206;
+  --primary-foreground: #221707;
   --secondary: var(--panel-2);
   --secondary-foreground: var(--text);
   --muted: var(--panel-2);
@@ -91,9 +91,17 @@
     -webkit-font-smoothing: antialiased;
   }
   body {
-    background-image: radial-gradient(1200px 600px at 80% -10%, #11161f 0%, #0E1116 55%);
+    background-image: radial-gradient(1200px 600px at 80% -10%, #151c28 0%, var(--slate) 60%);
     background-attachment: fixed;
     min-height: 100vh;
+  }
+  button, a, input, select, textarea, [role="button"] {
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
   :focus-visible {
     outline: 2px solid var(--signal);
@@ -118,8 +126,8 @@
   pointer-events: none;
   background-image: repeating-linear-gradient(
     to bottom,
-    rgba(242, 169, 59, 0.04) 0px,
-    rgba(242, 169, 59, 0.04) 1px,
+    rgba(255, 184, 77, 0.07) 0px,
+    rgba(255, 184, 77, 0.07) 1px,
     transparent 1px,
     transparent 5px
   );
@@ -135,10 +143,10 @@
 }
 .meter-fill {
   transform-origin: left center;
-  animation: meter-fill 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation: meter-fill 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 .signal-pulse {
-  animation: signal-pulse 2.6s ease-in-out infinite;
+  animation: signal-pulse 2.2s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
