@@ -2,7 +2,7 @@
 
 > Screen many CVs. Surface the ones who matter. Explain why.
 
-**🔗 Live demo:** https://gen-ai-capstone-project-git-main-vansh-s-workspace.vercel.app/
+**🔗 Live demo:** https://gen-ai-capstone-project-ten.vercel.app/
 
 *(First action may take ~50s while the free-tier backend wakes from sleep.)*
 
