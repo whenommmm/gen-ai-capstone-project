@@ -82,6 +82,11 @@ def health():
     return {"ok": True, "model": MODEL, "key_set": bool(os.getenv("GEMINI_API_KEY"))}
 
 
+@app.get("/")
+def root():
+    return {"service": "Signal · Talent Analyzer API", "docs": "/docs", "health": "/api/health"}
+
+
 @app.get("/api/sample-briefs")
 def sample_briefs():
     briefs = []
