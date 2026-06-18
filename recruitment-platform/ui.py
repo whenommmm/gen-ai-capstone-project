@@ -19,9 +19,9 @@ CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap');
 
 :root{
-  --void:#070B12; --slate:#0A0F17; --panel:#111723; --panel2:#18212F;
-  --line:#243246; --mist:#94A3B8; --text:#E8EEF6;
-  --signal:#5BA8FF; --signal-dim:#16243a; --good:#6BBF8A; --warn:#E0654E;
+  --void:#0B0E13; --slate:#0E1116; --panel:#161B23; --panel2:#1D2530;
+  --line:#2A323F; --mist:#9AA4B2; --text:#E8ECF2;
+  --signal:#E6B450; --signal-dim:#332b1a; --good:#6BBF8A; --warn:#E0654E;
 }
 
 /* base */
@@ -90,7 +90,7 @@ p,li,label,span{ color:var(--text); }
 .sg-meter-k{ font-family:'Space Mono',monospace; font-size:10px; letter-spacing:.12em;
   color:var(--mist); width:46px; text-transform:uppercase; }
 .sg-track{ flex:1; height:7px; background:var(--signal-dim); border-radius:4px; overflow:hidden; }
-.sg-fill{ height:100%; background:linear-gradient(90deg,#3d82d6,var(--signal));
+.sg-fill{ height:100%; background:linear-gradient(90deg,#c2923a,var(--signal));
   border-radius:4px; transform-origin:left; animation:sg-fill .9s cubic-bezier(.2,.7,.2,1) both; }
 .sg-meter-v{ font-family:'Space Mono',monospace; font-size:12px; color:var(--text); width:24px; text-align:right; }
 

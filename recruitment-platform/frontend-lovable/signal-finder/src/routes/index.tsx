@@ -116,7 +116,7 @@ function Meter({
           style={{
             width: `${pct}%`,
             animationDelay: `${index * 90}ms`,
-            background: "linear-gradient(90deg, #3d82d6 0%, #5BA8FF 100%)",
+            background: "linear-gradient(90deg, #c2923a 0%, #E6B450 100%)",
           }}
         />
       </div>
