@@ -38,8 +38,10 @@ Built with **Python + Streamlit + Google Gemini**.
 
 ```bash
 cd recruitment-platform
+
 python3 -m venv .venv
 source .venv/bin/activate
+
 pip install -r requirements.txt
 
 # 1. Put your free Gemini API key in .env  (get one at https://aistudio.google.com)
