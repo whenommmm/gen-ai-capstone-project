@@ -69,16 +69,22 @@ through one gateway (`llm.py`), so the model, retry logic, and JSON handling liv
 in exactly one place.
 
 ```
-app.py            Streamlit app: flow + state (01 Source -> 02 Intake -> 03 Analysis)
-ui.py             "Signal / Noise" design system — CSS tokens + HTML render helpers
-.streamlit/config.toml   dark theme + amber accent
-llm.py            single Gemini gateway — sync + async JSON calls, retry/backoff, rate-limit handling
-jd_parser.py      JD text  -> structured requirements                       (Feature 1)
-cv_parser.py      PDF/DOCX/TXT -> raw text (ingestion)                       (Feature 2)
-scorer.py         JD + CVs -> profile + semantic score + explanation + Qs    (Features 2,3,4,6)
-bias.py           shortlist -> homogeneity flags + overlooked candidates     (Feature 5)
-interview.py      on-demand regeneration of tailored interview questions     (Feature 6)
-generate_samples.py   writes 1 JD + 20 demo CVs (deliberately skewed for the bias demo)
+app.py                 Streamlit app: workflow & state management (01 Source → 02 Intake → 03 Analysis)
+ui.py                  "Signal / Noise" design system — CSS tokens and UI rendering helpers
+.streamlit/config.toml theme configuration (dark theme + amber accent)
+
+llm.py                 Single Gemini gateway — sync + async JSON calls, retry/backoff, rate-limit handling
+
+jd_parser.py           JD text → structured requirements                                  (Feature 1)
+cv_parser.py           PDF/DOCX/TXT → raw text (ingestion)                                (Feature 2)
+
+scorer.py              JD + CVs → profile + semantic score + explanation + Qs             (Features 2,3,4,6)
+
+bias.py                Shortlist → homogeneity flags + overlooked candidates              (Feature 5)
+
+interview.py           On-demand regeneration of tailored interview questions             (Feature 6)
+
+generate_samples.py    writes 1 JD + 20 demo CVs (deliberately skewed for the bias demo)
 ```
 
 **Data flow:** `JD text → jd_parser → structured JD`; `CV files → cv_parser → text`;
