@@ -50,14 +50,14 @@
 :root {
   --radius: 0.75rem;
 
-  --void: #0B0E13;
-  --slate: #0E1116;
-  --panel: #161B23;
-  --panel-2: #1D2530;
-  --line: #33404F;
-  --mist: #A8B2C0;
-  --text: #F2F5F9;
-  --signal: #FFB84D;
+  --void: #07100F;
+  --slate: #0B1413;
+  --panel: #11201E;
+  --panel-2: #18302C;
+  --line: #244039;
+  --mist: #8FA8A2;
+  --text: #E6F2EF;
+  --signal: #2DD4BF;
   --good: #72D19B;
   --warn: #F07A63;
 
@@ -68,7 +68,7 @@
   --popover: var(--panel);
   --popover-foreground: var(--text);
   --primary: var(--signal);
-  --primary-foreground: #221707;
+  --primary-foreground: #04211C;
   --secondary: var(--panel-2);
   --secondary-foreground: var(--text);
   --muted: var(--panel-2);
@@ -91,7 +91,7 @@
     -webkit-font-smoothing: antialiased;
   }
   body {
-    background-image: radial-gradient(1200px 600px at 80% -10%, #151c28 0%, var(--slate) 60%);
+    background-image: radial-gradient(1200px 600px at 80% -10%, #0d2320 0%, var(--slate) 60%);
     background-attachment: fixed;
     min-height: 100vh;
   }
